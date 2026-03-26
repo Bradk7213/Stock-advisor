@@ -1,0 +1,41 @@
+{
+  "name": "stock-advisor",
+  "version": "1.0.0",
+  "description": "AI-powered stock research and recommendations for teams",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "^14.0.0",
+    "@supabase/supabase-js": "^2.38.0",
+    "@supabase/auth-helpers-nextjs": "^0.8.0",
+    "axios": "^1.6.0",
+    "node-cron": "^3.0.3",
+    "@anthropic-ai/sdk": "^0.16.0",
+    "sendgrid": "^6.11.0",
+    "resend": "^2.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.1.2",
+    "dotenv": "^16.3.1",
+    "date-fns": "^2.30.0",
+    "react-query": "^3.39.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0",
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.16"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}

@@ -1,0 +1,32 @@
+// vercel.json - Vercel configuration for cron jobs and build settings
+{
+  "crons": [
+    {
+      "path": "/api/cron/daily-screening",
+      "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/price-check",
+      "schedule": "0 9,12,15,18 * * MON-FRI"
+    },
+    {
+      "path": "/api/cron/weekly-digest",
+      "schedule": "0 8 * * MON"
+    }
+  ],
+  "buildCommand": "npm run build",
+  "env": {
+    "SUPABASE_URL": "@supabase-url",
+    "SUPABASE_ANON_KEY": "@supabase-anon-key",
+    "SUPABASE_SERVICE_ROLE_KEY": "@supabase-service-role-key",
+    "FINNHUB_API_KEY": "@finnhub-api-key",
+    "ALPHA_VANTAGE_API_KEY": "@alpha-vantage-api-key",
+    "ANTHROPIC_API_KEY": "@anthropic-api-key",
+    "JWT_SECRET": "@jwt-secret",
+    "NEXTAUTH_SECRET": "@nextauth-secret",
+    "TEAMS_WEBHOOK_URL": "@teams-webhook-url",
+    "CRON_SECRET": "@cron-secret",
+    "SENDGRID_API_KEY": "@sendgrid-api-key",
+    "RESEND_API_KEY": "@resend-api-key"
+  }
+}
